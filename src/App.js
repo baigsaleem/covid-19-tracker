@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import './App.css';
 import MainApp from './components/MainApp';
+import Footer from './Footer';
 import image from "./image.png";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Suspense fallback={<h4>Loading data from API...</h4>}>
         <MainApp />
       </Suspense>
+      <Footer />
     </div>
   );
 }
